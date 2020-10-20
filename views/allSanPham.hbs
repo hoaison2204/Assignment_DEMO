@@ -1,0 +1,63 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tất cả sản phẩm</title>
+</head>
+
+<body>
+    <table width="100%" border="1">
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Price</td>
+            <td>Category</td>
+            <td>Author</td>
+        </tr>
+
+        {{# each SanPham}}
+        <tr>
+            <td>{{ID}}</td>
+            <td>{{name}}</td>
+            <td>{{price}}</td>
+            <td>{{category}}</td>
+            <td>{{author}}</td>
+        </tr>
+        {{each}}
+    </table>
+</body>
+
+</html> --}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table width="50%" border="1">
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Price</td>
+            {{!-- <td>Update</td> --}}
+        </tr>
+        {{# each sanPham}}
+        <tr>
+            <td>{{_id}}</td>
+            <td>{{name}}</td>
+            <td>{{price}}</td>
+            {{!-- <td><a href="/sanpham/edit?id={{_id}}">Update</a></td> --}}
+        </tr>
+        {{/each}}
+    </table>
+</body>
+
+</html>
+
